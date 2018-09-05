@@ -26,5 +26,22 @@ public class Location {
         return this.numberOfJobs;
     }
 
+    public List<Job> getJobs() {
+        return this.jobs;
+    }
+
+    public double getAverageSalary() {
+        return this.averageSalary/jobs.size();
+    }
+
+
+
+
+    // ********************    SETTERS    *************************** //
+
+
+    public void setAverageSalary(double value) {
+        this.averageSalary = value;
+    }
 
 }
